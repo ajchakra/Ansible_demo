@@ -1,0 +1,8 @@
+--- # Installing packages via yum module
+- hosts: demo
+  user: ansible
+  become: yes
+  connection: ssh
+  tasks:
+    - name: remove httpd package on nodes
+      action: yum name=httpd state=absent
