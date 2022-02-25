@@ -1,5 +1,5 @@
 --- # Installing packages via yum module
-- hosts: demo
+- hosts: all
   user: ansible
   become: yes
   connection: ssh
