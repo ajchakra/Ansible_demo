@@ -1,6 +1,6 @@
 --- # Installing packages via yum module
 - hosts: all
-  user: ansible
+  user: ec2-user
   become: yes
   connection: ssh
   tasks:
