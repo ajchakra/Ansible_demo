@@ -1,0 +1,10 @@
+---
+# This playbook prints a simple debug message
+- name: Echo 
+  hosts: 127.0.0.1
+  connection: local
+
+  tasks:
+  - name: Print message from Ansible server
+    debug:
+      msg: Hello from Ansible server.!!
